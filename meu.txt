@@ -1,0 +1,30 @@
+using System;
+
+class Program
+
+{
+    static void Main(string[] args)
+    {
+
+        int count = 0;
+        int numero = -1;
+
+        Console.WriteLine("========================= Calculadora Plus + =================");
+        Console.WriteLine("\n Digite os números que deseja somar :");
+        Console.WriteLine("\n Digite 0 quando quiser encerrar ");
+
+        while (numero != 0)
+        {
+            Console.WriteLine("\n Digite os números que deseja somar :");
+            Console.ForegroundColor= ConsoleColor.Green;
+            numero = int.Parse (Console.ReadLine());
+            Console.ResetColor();
+
+                count += numero;
+        }
+        Console.BackgroundColor= ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
+        Console.WriteLine($"\n Programa encerrado ! A soma total dos números infomormados é : {count}");
+        Console.ResetColor();    
+    }
+}
